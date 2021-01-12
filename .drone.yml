@@ -7,6 +7,7 @@ steps:
   image: alpine
   commands:
   - echo hello
+  - docker-compose --version
   - echo world
 
 trigger:
