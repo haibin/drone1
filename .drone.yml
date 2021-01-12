@@ -10,7 +10,7 @@ steps:
   #   - /var/run/docker.sock:/var/run/docker.sock
   commands:
     - echo hello
-    - docker-compose up
+    - docker-compose -f docker-compose.yml up
     - echo world
 
 trigger:
