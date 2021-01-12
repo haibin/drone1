@@ -6,8 +6,9 @@ steps:
 - name: greeting
   image: docker/compose:1.27.4
   # privileged: true
-  # volumes:
-  #   - /var/run/docker.sock:/var/run/docker.sock
+  volumes:
+    - name: docker-socket
+      path: /var/run/docker.sock
   commands:
     - echo hello
     - docker-compose -f docker-compose.yml up
@@ -18,3 +19,12 @@ trigger:
     include:
     - push
     - pull_request
+
+
+# -----------------------------------------------------------------------------
+#                                     Volumes
+# -----------------------------------------------------------------------------
+volumes:
+  - name: docker-socket
+    host:
+      path: /var/run/docker.sock
