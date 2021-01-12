@@ -7,12 +7,11 @@ steps:
   image: docker/compose:1.27.4
   privileged: true
   volumes:
-    # Use the Docker daemon on the host to build and push images.
     - /var/run/docker.sock:/var/run/docker.sock
   commands:
-  - echo hello
-  - docker-compose --version
-  - echo world
+    - echo hello
+    - docker-compose --version
+    - echo world
 
 trigger:
   event:
