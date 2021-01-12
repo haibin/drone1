@@ -6,8 +6,8 @@ steps:
 - name: greeting
   image: docker/compose:1.27.4
   privileged: true
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
+  # volumes:
+  #   - /var/run/docker.sock:/var/run/docker.sock
   commands:
     - echo hello
     - docker-compose --version
