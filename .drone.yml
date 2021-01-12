@@ -5,7 +5,7 @@ name: default
 steps:
 - name: greeting
   image: docker/compose:1.27.4
-  privileged: true
+  # privileged: true
   # volumes:
   #   - /var/run/docker.sock:/var/run/docker.sock
   commands:
