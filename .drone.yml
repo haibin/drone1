@@ -2,6 +2,9 @@ kind: pipeline
 type: docker
 name: default
 
+workspace:
+  path: /tmp
+
 steps:
 - name: greeting
   image: docker/compose:1.27.4
