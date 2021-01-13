@@ -13,8 +13,8 @@ steps:
     - echo hello
     - pwd
     - ls
-    - cp my.cnf /private
-    - ls /private
+    - cp my.cnf /tmp
+    - ls -l /tmp
     - docker-compose -f docker-compose.yml up -d
     - echo world
 
