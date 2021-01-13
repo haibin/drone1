@@ -16,7 +16,7 @@ steps:
     - echo hello
     - pwd
     - ls
-    - cp my.cnf /tmp
+    # - cp my.cnf /tmp
     - ls -l /tmp
     - docker-compose -f docker-compose.yml up -d
     - echo world
