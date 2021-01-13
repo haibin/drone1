@@ -11,6 +11,8 @@ steps:
       path: /var/run/docker.sock
   commands:
     - echo hello
+    - pwd
+    - ls
     - docker-compose -f docker-compose.yml up -d
     - echo world
 
