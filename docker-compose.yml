@@ -4,4 +4,4 @@ services:
     mysql_integration:
         image: mysql
         volumes:
-            - /private/my.cnf:/etc/mysql/conf.d/custom.cnf
+            - ./my.cnf:/etc/mysql/conf.d/custom.cnf
