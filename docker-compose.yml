@@ -4,4 +4,4 @@ services:
     mysql_integration:
         image: mysql
         volumes:
-            - ./docker/mysql/my.cnf:/etc/mysql/conf.d/custom.cnf
+            - ./my.cnf:/etc/mysql/conf.d/custom.cnf
